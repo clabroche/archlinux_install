@@ -1,0 +1,25 @@
+#
+# /etc/hosts: static lookup table for host names
+#
+
+#<ip-address>	<hostname.domain.org>	<hostname>
+127.0.0.1	localhost.localdomain	localhost
+127.0.0.1       antho.fr      antho
+127.0.0.1       localhost-iryu54.fr  localhost-iryu54.fr
+127.0.0.1       intero.fr  intero.fr
+127.0.0.1       localhost-ajax.fr localhost-ajax
+127.0.0.1       localhost-bdweb.fr localhost-bdweb
+127.0.0.1       localhost-agile.fr localhost-agile
+127.0.0.1       localhost-mygiftbox.fr localhost-mygiftbox
+127.0.0.1       localhost-kaelnew.fr kaelnew.fr      
+127.0.0.1       localhost-ampache.fr kaelnew.fr
+127.0.0.1       localhost-ldap.fr ldap.fr      
+127.0.0.1 ezmesure-preprod.couperin.org
+127.0.0.1       localhost-hackathon.fr ldap.fr
+127.0.0.1       localhost-xvwa.fr xvwa.fr
+
+127.0.0.1	monsite.fr	monsite.fr
+::1		localhost.localdomain	localhost
+
+# End of file
+127.0.0.1 arch-pc # added by Apache Friends XAMPP

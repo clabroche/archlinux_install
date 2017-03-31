@@ -1,0 +1,8 @@
+1. boot
+2. # loadkeys fr-pc
+3. cfdisk
+3.1 new partition & write & quit
+4. mkfs /dev/sda1
+5. mount /dev/sda1 /mnt
+6. pacstrap /mnt base base-devel
+7. genfstab -U -p >> /mnt/etc/fstab
