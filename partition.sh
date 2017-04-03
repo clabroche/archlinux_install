@@ -11,3 +11,4 @@ grub-install /dev/sda --root-directory=/mnt
 arch-chroot /mnt git clone https://github.com/clabroche/archlinux_install.git
 arch-chroot /mnt sh archlinux_install/first_script.sh ${partition}
 umount /mnt
+reboot
