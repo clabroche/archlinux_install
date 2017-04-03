@@ -1,19 +1,5 @@
 boot
 loadkeys fr-pc
-cfdisk
-	new partition & write & quit
-mkfs /dev/sda1
-mount /dev/sda1 /mnt
-pacstrap /mnt base base-devel
-genfstab -U -p /mnt >> /mnt/etc/fstab
-arch-chroot /mnt
-cd
 git clone https://github.com/clabroche/archlinux_install.git
-sudo chmod -R u+x archlinux_install
 cd archlinux_install
-sh first&reboot.sh
-
-15. su coco
-13. 
-
-
+sh ./partition.sh
