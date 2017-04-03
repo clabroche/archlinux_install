@@ -11,4 +11,6 @@ echo LANG="fr_FR.UTF-8" > /etc/locale.conf
 export LANG="fr_FR.UTF-8"
 echo KEYMAP=fr > /etc/vconsole.conf
 echo arch-pc > /etc/hostname
+passwd
+passwd root
 exit
