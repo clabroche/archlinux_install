@@ -1,9 +1,8 @@
-
+cfdisk
 while [[ -z ${partition} ]]; do
-  echo "Partition to install"
+  echo "Partition to install ?"
   read partition
 done
-cfdisk
 mkfs.ext4 ${partition}
 mount ${partition} /mnt
 pacstrap /mnt base base-devel
