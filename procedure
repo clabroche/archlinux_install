@@ -1,6 +1,4 @@
 boot
 loadkeys fr-pc
 wget https://lc.cx/Jaoe
-git clone https://github.com/clabroche/archlinux_install.git
-cd archlinux_install
-sh ./partition.sh
+sh Jaeo

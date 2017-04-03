@@ -5,7 +5,6 @@ while [[ -z ${partition} ]]; do
 done
 mkfs.ext4 ${partition}
 mount ${partition} /mnt
-pacstrap /mnt base base-devel
+pacstrap /mnt base base-devel git
 genfstab -U -p /mnt >> /mnt/etc/fstab
-cp ../archlinux_install /mnt/root
-arch-chroot /mnt
+arch-chroot /mnt git clone https://github.com/clabroche/archlinux_install.git && archlinux_install/first&reboot.sh
