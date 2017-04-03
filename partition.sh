@@ -9,4 +9,5 @@ pacstrap /mnt base base-devel git
 genfstab -U -p /mnt >> /mnt/etc/fstab
 arch-chroot /mnt git clone https://github.com/clabroche/archlinux_install.git
 arch-chroot /mnt sh archlinux_install/first_script.sh ${partition}
+grub-install $0
 umount /mnt
