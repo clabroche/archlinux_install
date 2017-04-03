@@ -2,7 +2,7 @@ pacman -S sudo grub os-prober
 useradd -g users -G wheel,storage,power -m coco
 grub-mkconfig -o /boot/grub/grub.cfg
 cd archlinux_install
-mv etc/ /
+rsync -a etc/ /etc
 pacman -Syu
 pacman -S bash-completion networkmanager lxdm wpa_supplicant wifi-menu dialog
 sudo systemctl enable dhcpcd
