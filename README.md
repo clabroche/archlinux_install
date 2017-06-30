@@ -10,4 +10,4 @@ git clone https://github.com/clabroche/archlinux_install.git
 
 cd archlinux_install
 
-first_script.sh
+install.sh
